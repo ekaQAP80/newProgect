@@ -1,0 +1,42 @@
+#s_g = input("введите:")
+##L = list(map(float, input("число").split()))
+##print(L)
+##L[0], L[-1] = L[-1], L[0]
+##print(L)
+##L.append(sum(L))
+##print(L)
+#list_of_s_g = s_g.split()
+#list_of_numb = list(map(int, list_of_s_g))
+#print(list_of_numb)
+#print(sum(list_of_numb[::3]))
+
+#множества
+#найти количество уникальных символов в тексте.
+#text_1 = len(list(set(input("введите текст"))))
+#print(text_1)
+#text_2 = list(set(text_1))
+#print(text_2)
+#print(len(text_2))
+#множества присваивания
+#a = list(map(int, input('первое').split()))
+#b = list(map(int, input('второе').split()))
+#a_set, b_set = set(a), set(b)
+#print(a_set)
+#print(b_set)
+#a_and_b = a_set.intersection(b_set)
+#a_and_b_2 = a_set.union(b_set)
+#a_SIMETRIC_b = a_set.symmetric_difference(b_set)
+#print(a_and_b)
+#print(a_and_b_2)
+#print(a_SIMETRIC_b)
+# идентичность
+
+shopping_center = ("Галерея", "Санкт-Петербург", "Лиговский пр. 30", ["H&M", "Zara"])
+list_id_before = id(shopping_center[-1])
+print(shopping_center)
+shopping_center[-1].append("Uniqlo")
+list_id_after = id(shopping_center[-1])
+print(shopping_center)
+print(list_id_before)
+print(list_id_after)
+print(list_id_before == list_id_after)
